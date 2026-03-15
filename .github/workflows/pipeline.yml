@@ -1,0 +1,12 @@
+name: GitOps-Automatic-Flow
+on: [push]
+jobs:
+  automazione-cloud:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Esecuzione Comandi
+        run: |
+          echo "Agente GitOps attivato con successo!"
+          echo "Leggo la configurazione attuale:"
+          cat manifest.txt
