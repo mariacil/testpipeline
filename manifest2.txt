@@ -1,4 +1,0 @@
-app_name: "Portale-Ford"
-version: "1.0.0"
-status: "produzione"
-manifest.txt: replicas: 100.
