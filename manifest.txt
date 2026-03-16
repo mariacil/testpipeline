@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: info-portale-ford
+data:
+  app_name: "Portale-Ford"
+  version: "1.0.0"
+  status: "produzione"
+  note: "Repliche desiderate 2 - attenzione alle risorse"
