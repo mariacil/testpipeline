@@ -1,0 +1,14 @@
+# 1. Usa un'immagine di base leggera (Alpine è perfetta per i lab)
+FROM alpine:3.18
+
+# 2. Installa eventuali pacchetti minimi se servono (es. curl per i test)
+RUN apk add --no-cache curl
+
+# 3. Crea la cartella dell'applicazione
+WORKDIR /app
+
+# 4. Copia tutto il contenuto del repo (incluso il manifest.yaml) dentro l'immagine
+COPY . .
+
+# 5. Comando di avvio (per far vedere che il container gira)
+CMD ["sh", "-c", "echo 'Container Ford-App avviato correttamente su GHCR!' && sleep 3600"]
