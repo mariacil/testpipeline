@@ -6,6 +6,7 @@ RUN apk add --no-cache curl
 
 # 3. Crea la cartella dell'applicazione
 WORKDIR /app
+
 # 4. Copia tutto il contenuto del repo (incluso il manifest.yaml) dentro l'immagine
 COPY . .
 
